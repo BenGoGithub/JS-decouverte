@@ -1,65 +1,68 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Déclare le type de document, ici c'est un document HTML5 -->
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
     </head>
     <body>
 
-        <h1>Exercice 0</h1>
+        <h1>Exercice 0</h1> <!-- Titre de niveau 1 affiché sur la page -->
 
         <script type="text/javascript">
 
-        /* Section 1 */   
+        /* Section 1 */
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; // Déclare une variable 'name' qui contient la chaîne de caractères "Joe"
+        var city = 'London'; // Déclare une variable 'city' qui contient la chaîne de caractères 'London'
+        var age = 32; // Déclare une variable 'age' qui contient l'entier 32
+        var isRed = true; // Déclare une variable 'isRed' qui contient la valeur booléenne true (vrai)
+        var isOld = age > 80; // Déclare une variable 'isOld' qui est vraie si 'age' est supérieur à 80 (ici faux)
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developer', 'Professional climber']; // Déclare un tableau 'previousJobs' contenant une liste de chaînes de caractères représentant des métiers précédents
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        function info(height, weight) { // Déclare une fonction 'info' prenant deux paramètres 'height' et 'weight'
+            if (height > 180) { // Si 'height' (taille) est supérieur à 180
+                console.log('Vous êtes grand'); // Affiche "Vous êtes grand" dans la console
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+            if (weight < 0) { // Si 'weight' (poids) est inférieur à 0
+                console.log('oups, there is a problem'); // Affiche "oups, there is a problem" dans la console
+            } else if (weight < 15) { // Sinon, si 'weight' est inférieur à 15
+                console.log('Are you that slim ?'); // Affiche "Are you that slim ?" dans la console
+            } else { // Sinon (poids >= 15)
+                console.log('Good !'); // Affiche "Good !" dans la console
             }
         }
 
-        info(165, 45);
+        info(165, 45); // Appelle la fonction 'info' avec les valeurs 165 pour la taille et 45 pour le poids
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; // Déclare une variable 'myHeight' qui contient l'entier 175
+        var myWeight = 86; // Déclare une variable 'myWeight' qui contient l'entier 86
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); // Appelle la fonction 'info' avec 'myHeight' et 'myWeight' comme arguments
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); // Appelle la fonction 'info' avec 'myHeight' + 15 et 'myWeight' - 100 comme arguments
 
-        function toUpper(variable) {
-            return variable.toUpperCase();
+        function toUpper(variable) { // Déclare une fonction 'toUpper' qui prend un paramètre 'variable'
+            return variable.toUpperCase(); // Retourne la chaîne de caractères 'variable' en majuscules
         }
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name); // Déclare une variable 'upperName' contenant 'name' transformé en majuscules
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { // Boucle for qui s'exécute 3 fois (i = 0, 1, 2)
+            console.log(previousJobs[i]); // Affiche dans la console le métier à l'index 'i' du tableau 'previousJobs'
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquelle Joe vit.     
 
         // afficher si Joe est roux ou pas.
+        console.log(city); // Affiche la ville dans laquelle Joe vit, ici "London"
+        console.log(isRed); // Affiche si Joe est roux ou pas, ici 'true'
+
 
         /* Section 3 */
 
-        // console.log(myVariable);
+        // console.log(myVariable); // Tentative d'afficher une variable non définie, ce qui provoque une erreur de référence.
 
         </script>
 
